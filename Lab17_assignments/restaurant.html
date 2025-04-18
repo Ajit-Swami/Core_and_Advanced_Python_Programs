@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Swami's Restaurant</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f2;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      padding: 12px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 14px;
+    }
+
+    .container {
+      padding: 20px;
+      text-align: center;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    .menu {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .menu-item {
+      background-color: white;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      padding: 15px;
+      width: 300px;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .menu-item img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 4px;
+    }
+
+    .menu-item b {
+      display: block;
+      font-size: 18px;
+      margin-top: 10px;
+    }
+
+    .menu-item i {
+      color: #666;
+      font-size: 14px;
+    }
+
+    .price {
+      margin-top: 8px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    video {
+      width: 100%;
+      margin-top: 10px;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div><b>Swami's Restaurant</b></div>
+    <nav>
+      <a href="#">Menu</a> |
+      <a href="#">Popular Dishes</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2><u>Menu</u></h2>
+    <div class="menu">
+      <div class="menu-item">
+        <img src="pizza_superme.jpg" alt="Pizza Supreme">
+        <b>Pizza Supreme</b>
+        <i>Pizza sauce, mozzarella, bacon, onion, bell sauce, capsicum, pepperoni, mushrooms, olives</i>
+        <div class="price">Price: ₹250</div>
+        <video controls>
+          <source src="pizza.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <div class="menu-item">
+        <img src="panner_tikka.jpg" alt="Paneer Tikka">
+        <b>Paneer Tikka</b>
+        <i>Paneer, Yogurt, Ground Spices, Bell Peppers, Onions, Baby Corn, Mushrooms</i>
+        <div class="price">Price: ₹300</div>
+        <video controls>
+          <source src="panner_tikka.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
